@@ -257,10 +257,8 @@
                 var newTime = new Date().getTime() / 1000,
                     deltaTime = newTime - (time || newTime);
                 time = newTime;
-
                 // clear canvas
                 context.clearRect(0, 0, canvas.width, canvas.height);
-
                 // create new particles
                 var amount = particleRate * deltaTime;
                 for (var i = 0; i < amount; i++) {
